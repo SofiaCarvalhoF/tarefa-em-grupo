@@ -1,6 +1,5 @@
 // tarefas.js - Sistema de Lista de Tarefas
 let tarefas = [];
-let titulo = "GERENCIADOR DE TAREFAS"; // <- linha do conflito
 let titulo = "SISTEMA DE TAREFAS";
 function adicionarTarefa(descricao) {
 tarefas.push({ descricao: descricao, concluida: false });
@@ -36,6 +35,8 @@ console.log("Removida: " + rem[0].descricao);
 // Teste
 adicionarTarefa("Tarefa B");
 removerTarefa(1); listarTarefas();
+
+
 // Teste inicial
 adicionarTarefa("Estudar Git");
 listarTarefas();
